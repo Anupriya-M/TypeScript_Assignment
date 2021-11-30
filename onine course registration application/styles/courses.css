@@ -1,0 +1,33 @@
+#homePage
+{
+    display: block;
+}
+button
+{
+    width: 120px;
+    height: 40px;
+    background-color: coral;
+    color: whitesmoke;
+    font-size: medium;
+
+}
+#newUserPage
+{
+    display: none;
+}
+#existingUserPage
+{
+    display: none;
+}
+#coursePage
+{
+    display: none;
+}
+#availableCourse
+{
+    display: none;
+}
+#enrolledCourse
+{
+    display: none;
+}

@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Online Course Registration Application</title>
+        <link rel="stylesheet" href="../onine course registration application/styles/courses.css">
+        <script type="text/JavaScript" src="../onine course registration application/script/course.js"></script>
+    </head>
+    <body>
+        <div id="homePage">
+            <h2>Online Course Registration Application</h2>
+            <button onclick="newUserPage()">Sign Up</button>
+            <button onclick="existingUserPage()">Log in</button>
+            <!-- <input type="button" value="Sign Up" onclick="newUserPage()">
+            <input type="button" value="Log in" onclick="existingUserPage()"> -->
+
+        </div>
+
+        <div id="newUserPage">
+            <h2>Sign up </h2>
+            <label>User Name:</label><br>
+            <input type="text" id="newUserName"><br><br>
+            <label>Age:</label><br>
+            <input type="number" id="newUserAge"><br><br>
+            <label>Phone Number:</label><br><br>
+            <input type="number" id="newUserPhoneNum"><br><br>
+            <button onclick="addNewUser()">Register</button>
+
+        </div>
+
+        <div id="existingUserPage">
+            <h2>Login page</h2>
+            <label>User ID:</label><br>
+            <input type="text" id="userId"><br><br>
+            <button onclick="signin()">Sign In</button>
+
+        </div>
+
+        <div id="coursePage">
+            <h2>Course page</h2>
+            <button onclick="availableCourse()" >cousres</button>
+            <button onclick="enrolledCourse()">Enrolled Courses</button><br>
+            <!-- <label id="availableCourses">availableCourses</label> -->
+        </div>
+
+            <div id="availableCourse">
+                <h2>Courses to learn</h2><br>
+                <label>User Id: </label>
+                    <input type="text" id="userId"><br><br>
+                    <label for="courses">Available Course : </label>
+            <select id="courses">
+                <option value="c#" id="csharp">C-Sharp</option>
+                <option value="java" id="java">Java</option>
+                <option value="html" id="html">HTML</option>
+                <option value="css" id="css">CSS</option>
+                <option value="javascript" id="javascript">JavaScript</option>
+                <option value="typescript" id="typescript">TypeScript</option>
+            </select><br><br>
+                    <label for="requieddays">Required Days : </label>
+                    <input type="number" id="requireddays"><br><br>
+                    <button id="enrollbutton" onclick="enroll()">Enroll</button>
+
+            </div>
+
+            <div id="enrolledCourse">
+                <h2>Enrolled course list</h2>
+                <p id="enrolledcourseinfo"></p>
+                <button id="goback" onclick="goback()">Back to menu</button>
+            </div>
+
+      
+    </body>
+</html>
